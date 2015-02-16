@@ -1,10 +1,6 @@
 FROM cloudgear/ubuntu:14.04
 MAINTAINER Georg Kunz, CloudGear <contact@cloudgear.net>
 
-# imagemagick and related packages are omitted because of their
-# specifity and large size (68mb). If you need it, please install them:
-# apt-get update -q && apt-get install -yq imagemagick libjpeg-dev libmagickcore-dev libmagickwand-dev
-
 RUN apt-get update -q && apt-get install -yq --no-install-recommends \
         autoconf \
         ca-certificates \
